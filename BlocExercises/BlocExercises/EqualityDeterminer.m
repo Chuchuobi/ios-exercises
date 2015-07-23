@@ -14,25 +14,22 @@
     
     BOOL areTheyEqual = [string1 isEqualToString: string2];
     
-    NSString *result = areTheyEqual ? @"Yes" : @"No";
-    
-    
-    return result;
+    return areTheyEqual;
 }
 
 - (BOOL) number:(NSNumber *)number1 isTheSameAsNumber:(NSNumber *)number2 {
     
     BOOL areTheyEqual = [number1 isEqualToNumber: number2];
     
-    NSString *result = areTheyEqual ? @"Yes" : @"No";
+    //NSString *result = areTheyEqual ? @"Yes" : @"No";
     
-    return result;
+    return areTheyEqual;
 }
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {
     
     
-    BOOL isGreater = integer1 > integer2 ? @"Yes" : @"No";
+    BOOL isGreater = integer1 > integer2 ? YES : NO;
     
     return isGreater;
 }
