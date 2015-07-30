@@ -31,7 +31,6 @@
 
 
 - (NSDictionary *)dictionaryWithQuoteAddedToStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
-    /* WORK HERE */
     NSMutableDictionary *dictionary = [characterDictionary mutableCopy];
     dictionary[@"quote"] = @"Picard is the boss";
     return dictionary;
