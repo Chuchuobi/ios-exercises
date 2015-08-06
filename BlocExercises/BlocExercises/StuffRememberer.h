@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface StuffRememberer : NSObject
+@property (nonatomic, strong) NSMutableArray *arrayRemember;
+@property (nonatomic, strong) NSMutableArray *arrayCopy;
+@property (assign)CGFloat floatRememeber;
+
 
 /*
  
@@ -38,7 +42,10 @@
  
  @return The remembered mutable array, or @c nil if none was provided.
  */
+
 - (NSMutableArray *) arrayYouShouldRemember;
+// Changes I made
+
 
 // --------------------------------------------------------------------
 
